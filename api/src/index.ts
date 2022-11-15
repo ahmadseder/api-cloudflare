@@ -25,7 +25,7 @@ addEventListener("fetch", async (event) => {
           .replace("/latest/", "")
           .split("/");
         event.respondWith(
-          latestRoute(name, contractVersion, corsHeaders, "my-ns")
+          latestRoute(name, contractVersion, corsHeaders, TinyFrontendKv)
         );
         return;
       }
